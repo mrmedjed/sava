@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npx mocha test",
     "testGet": "npx mocha test/testGet.js",
     "testPost": "npx mocha test/testPost.js",
-    "testPut": "npx mocha test/testPut.js"
+    "testPut": "npx mocha test/testPut.js",
+    "testDelete": "npx mocha test/testDelete.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +16,9 @@
     "axios": "^1.3.4",
     "chai": "^4.3.7",
     "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "axios-logger": "^2.6.2"
   }
 }
